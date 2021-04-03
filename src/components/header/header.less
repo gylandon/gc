@@ -1,0 +1,124 @@
+@tablet: ~'(max-width: 860px)';
+@phone: ~'(max-width: 480px)';
+@pcdown: ~'(max-width: 1310px)';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  padding: 20px 2.5vw;
+  font-family: proxima-nova !important;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.imgContainer {
+  display: flex;
+  @media @pcdown {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+
+.img {
+  max-width: 400px;
+  max-height: 100px;
+  @media @pcdown {
+    max-width: 100%;
+    max-height: 100px;
+    margin: 0 auto;
+  }
+}
+
+.naviContainer {
+  span :hover{
+    cursor: pointer;
+  }
+  @media @pcdown {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  @media @tablet {
+    display: none ;
+  }
+}
+
+.naviedContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @media @pcdown {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  @media @tablet {
+    display: none ;
+  }
+}
+
+.avatar {
+  vertical-align: middle !important;
+  color: #019638 !important;
+  cursor: pointer;
+  &:hover {
+    color: #11552a !important;
+  }
+}
+
+.avatarafter {
+  position: relative;
+  color: #019638 !important;
+  margin: auto 30px;
+  cursor: pointer;
+  z-index: 1;
+  &:hover {
+    color: #11552a !important;
+    .cardContainer{
+      display: block;
+    }
+  }
+}
+
+.choseHighlight {
+  color: #019638 !important;
+}
+
+.hideStyle {
+  width: fit-content;
+}
+
+.cardContainer {
+  position: absolute;
+  width: 100px;
+  line-height: 1;
+  top: 22px;
+  right: -40px;
+  border: 2px solid rgba(121, 121, 121, 1);
+  border-radius: 5px;
+  padding: 0 !important;
+  text-align: center;
+  background-color: #fff;
+  display: none;
+
+  .divider {
+    width: 98px;
+    margin: 0 !important;
+  }
+}
+
+.cardItem {
+  margin: 24px auto;
+}
+
+.divider {
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+  border-top: 2px solid rgb(187, 187, 187) !important;
+  width: 100%;
+}

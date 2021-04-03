@@ -1,0 +1,9 @@
+/**
+ * Site related action types.
+ */
+export default {
+  GET_SITES: 'GET_SITES',
+  GET_SITES_FULFILLED: 'GET_SITES_FULFILLED',
+  GET_SITES_PENDING: 'GET_SITES_PENDING',
+  GET_SITES_REJECTED: 'GET_SITES_REJECTED',
+};
